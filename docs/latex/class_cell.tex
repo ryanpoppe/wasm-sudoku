@@ -1,0 +1,497 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+\mbox{\hyperlink{class_cell}{Cell}} objects make up the 9x9 Sudoku grid. Each \mbox{\hyperlink{class_cell}{Cell}} is 64x64 pixels.  
+
+
+
+
+{\ttfamily \#include $<$cell.\+h$>$}
+
+
+
+Collaboration diagram for Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_cell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cell_ae2c5a718c64df9b3088c8166d6b3ba43}{is\+Active}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is currently selected by the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_afd7d80305283ce97b19ce85fb475f100}{set\+Active}} (bool \mbox{\hyperlink{class_cell_a53e8a663ce96c4ab48eb62868b15c828}{active}})
+\begin{DoxyCompactList}\small\item\em This method sets active status to this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_abda618a42a3cd6c8f47d9d8fc0cbc041}{is\+Highlighted}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is currently highlighted as part of the active group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_aa1be6baba63fa2539350646652c453ef}{set\+Highlighted}} (bool \mbox{\hyperlink{class_cell_ae47e1488211fbebb9cf37658d15eed51}{highlighted}})
+\begin{DoxyCompactList}\small\item\em This method sets highlighted status to this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a03259d45d95a864c8b935c420115ac93}{is\+Given}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is an original given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a744372cae4d980da9cc0222b8b0eed33}{set\+Given}} (bool \mbox{\hyperlink{class_cell_a894481b11e1b35618bde8b83dcd2e576}{given}})
+\begin{DoxyCompactList}\small\item\em This method sets given status to this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_afff7b6372dbc510e7e6d39e6db9ab7a0}{is\+Invalid}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if \mbox{\hyperlink{class_cell}{Cell}} has an invalid value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_addd25fbd659b2b8d74a6cfcf2813d277}{set\+Invalid}} (bool \mbox{\hyperlink{class_cell_a6e725de8eff5544aa544d0a684f523e0}{invalid}})
+\begin{DoxyCompactList}\small\item\em This method sets invalid status to this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a529edd65dc41e95583e76427ebe3ddcd}{is\+Hidden}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is hidden. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a45f6d2ca583dd4a056d3ea7cb1aa887f}{set\+Hidden}} (bool \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}})
+\begin{DoxyCompactList}\small\item\em This method sets hidden status to this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_ae104b91b4ba66747bcfa0c776b8cf727}{is\+Hovered}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if mouse pointer is over this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_ac5bb88b06886fafae94c46ded555d4b7}{set\+Hovered}} (bool \mbox{\hyperlink{class_cell_a32e869fb649f0a6e459c3e862e7f5ddf}{hovered}})
+\begin{DoxyCompactList}\small\item\em This method sets hovered status to this \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a971dd484f9ae895f3990b8dcb43d2282}{is\+Entered}} ()
+\begin{DoxyCompactList}\small\item\em This method returns True if a valid value has been entered in the \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+unsigned short \mbox{\hyperlink{class_cell_aaba8773c40b75adbfed4f35e5eede1c5}{get\+Value}} ()
+\begin{DoxyCompactList}\small\item\em This method returns value of the \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a3160a45fb961ba1f319424988fd5a4ee}{set\+Value}} (unsigned short)
+\begin{DoxyCompactList}\small\item\em This method sets the value of the \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+unsigned short \mbox{\hyperlink{class_cell_a7806036101d729685ac78999189f7df7}{get\+\_\+grid\+\_\+pos\+\_\+x}} ()
+\begin{DoxyCompactList}\small\item\em This method returns x-\/coordinate of the \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+unsigned short \mbox{\hyperlink{class_cell_a8f589113dd676dc8f7ae31b082bf5ad9}{get\+\_\+grid\+\_\+pos\+\_\+y}} ()
+\begin{DoxyCompactList}\small\item\em This method returns y-\/coordinate of the \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a115cce591752bdc9b6c276e2d634f4f0}\label{class_cell_a115cce591752bdc9b6c276e2d634f4f0}} 
+void \mbox{\hyperlink{class_cell_a115cce591752bdc9b6c276e2d634f4f0}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the cell object onto the canvas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_a9d0ebfcb208bfb39c30dfa7720dd9b34}{Cell}} (S\+D\+L\+\_\+\+Surface $\ast$, unsigned short, unsigned short, unsigned short, bool)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}\label{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}} 
+\mbox{\hyperlink{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}{$\sim$\+Cell}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} De\+Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a57b1efc21b583a74c55d197bd75c437e}\label{class_cell_a57b1efc21b583a74c55d197bd75c437e}} 
+void \mbox{\hyperlink{class_cell_a57b1efc21b583a74c55d197bd75c437e}{set\+Color}} ()
+\begin{DoxyCompactList}\small\item\em This method sets the colors of the \mbox{\hyperlink{class_cell}{Cell}} square and number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a53e8a663ce96c4ab48eb62868b15c828}\label{class_cell_a53e8a663ce96c4ab48eb62868b15c828}} 
+bool \mbox{\hyperlink{class_cell_a53e8a663ce96c4ab48eb62868b15c828}{active}}
+\begin{DoxyCompactList}\small\item\em If this \mbox{\hyperlink{class_cell}{Cell}} is the currently active one on the game board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_ae47e1488211fbebb9cf37658d15eed51}\label{class_cell_ae47e1488211fbebb9cf37658d15eed51}} 
+bool \mbox{\hyperlink{class_cell_ae47e1488211fbebb9cf37658d15eed51}{highlighted}}
+\begin{DoxyCompactList}\small\item\em Is part of the currently highlighted row, column, or block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a894481b11e1b35618bde8b83dcd2e576}\label{class_cell_a894481b11e1b35618bde8b83dcd2e576}} 
+bool \mbox{\hyperlink{class_cell_a894481b11e1b35618bde8b83dcd2e576}{given}}
+\begin{DoxyCompactList}\small\item\em Is an original given value at the start of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a6e725de8eff5544aa544d0a684f523e0}\label{class_cell_a6e725de8eff5544aa544d0a684f523e0}} 
+bool \mbox{\hyperlink{class_cell_a6e725de8eff5544aa544d0a684f523e0}{invalid}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} currently holds an invalid value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_ad8c292051c80a49db6b505465ffc7771}\label{class_cell_ad8c292051c80a49db6b505465ffc7771}} 
+bool \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} is currently hidden (e.\+g. game paused) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a32e869fb649f0a6e459c3e862e7f5ddf}\label{class_cell_a32e869fb649f0a6e459c3e862e7f5ddf}} 
+bool \mbox{\hyperlink{class_cell_a32e869fb649f0a6e459c3e862e7f5ddf}{hovered}}
+\begin{DoxyCompactList}\small\item\em Mouse pointer currently sits within this \mbox{\hyperlink{class_cell}{Cell}}\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_aa9a3e1b384045aba133629697a9a92ef}\label{class_cell_aa9a3e1b384045aba133629697a9a92ef}} 
+bool \mbox{\hyperlink{class_cell_aa9a3e1b384045aba133629697a9a92ef}{entered}}
+\begin{DoxyCompactList}\small\item\em Valid value has been entered in \mbox{\hyperlink{class_cell}{Cell}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_ae3985ced12687d43293c942242262baf}\label{class_cell_ae3985ced12687d43293c942242262baf}} 
+unsigned short \mbox{\hyperlink{class_cell_ae3985ced12687d43293c942242262baf}{value}}
+\begin{DoxyCompactList}\small\item\em value of the \mbox{\hyperlink{class_cell}{Cell}} on the board (1 $<$= value $<$= 9) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_ac1052949bd31d5477f2691930aac5baf}\label{class_cell_ac1052949bd31d5477f2691930aac5baf}} 
+unsigned short \mbox{\hyperlink{class_cell_ac1052949bd31d5477f2691930aac5baf}{x}}
+\begin{DoxyCompactList}\small\item\em x-\/coordiante on the Sudoku board (domain\+: 1 $<$= x $<$= 9) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a0a362c465d028b2e77cee3b31cee44a4}\label{class_cell_a0a362c465d028b2e77cee3b31cee44a4}} 
+unsigned short \mbox{\hyperlink{class_cell_a0a362c465d028b2e77cee3b31cee44a4}{y}}
+\begin{DoxyCompactList}\small\item\em y-\/coordinate on the Sudoku board (range\+: 1 $<$= y $<$= 9) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a37240cd288f30c02b2af517d024ac84a}\label{class_cell_a37240cd288f30c02b2af517d024ac84a}} 
+F\+T\+\_\+\+Face \mbox{\hyperlink{class_cell_a37240cd288f30c02b2af517d024ac84a}{font}}
+\begin{DoxyCompactList}\small\item\em Free\+Type font face (T\+TF font pre-\/loaded in main, passed by reference) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a1a811859c32a5c35a7ab7509b27713b1}\label{class_cell_a1a811859c32a5c35a7ab7509b27713b1}} 
+\mbox{\hyperlink{class_color}{Color}} $\ast$ \mbox{\hyperlink{class_cell_a1a811859c32a5c35a7ab7509b27713b1}{cell\+Color}}
+\begin{DoxyCompactList}\small\item\em Object that holds pre-\/assigned color values for \mbox{\hyperlink{class_cell}{Cell}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a6c618dd1e380abfa39ebe3d7ca324fcb}\label{class_cell_a6c618dd1e380abfa39ebe3d7ca324fcb}} 
+\mbox{\hyperlink{class_color}{Color}} $\ast$ \mbox{\hyperlink{class_cell_a6c618dd1e380abfa39ebe3d7ca324fcb}{text\+Color}}
+\begin{DoxyCompactList}\small\item\em Object that holds pre-\/assigned color values for \mbox{\hyperlink{class_cell}{Cell}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a4ceef83913850011c115f23fe03fe793}\label{class_cell_a4ceef83913850011c115f23fe03fe793}} 
+\mbox{\hyperlink{class_shape}{Shape}} $\ast$ \mbox{\hyperlink{class_cell_a4ceef83913850011c115f23fe03fe793}{square}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_shape}{Shape}} object drawn on canvas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_afb6ea289b21557396075a338c6e5a342}\label{class_cell_afb6ea289b21557396075a338c6e5a342}} 
+\mbox{\hyperlink{class_text}{Text}} $\ast$ \mbox{\hyperlink{class_cell_afb6ea289b21557396075a338c6e5a342}{cell\+Value}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_text}{Text}} object drawn on canvas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a80745c06b1a19d193a15567a59178c09}\label{class_cell_a80745c06b1a19d193a15567a59178c09}} 
+const unsigned short \mbox{\hyperlink{class_cell_a80745c06b1a19d193a15567a59178c09}{H\+E\+I\+G\+HT}} = 64
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} height in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a85b9b3af8b8b53da705b933628ccb6f3}\label{class_cell_a85b9b3af8b8b53da705b933628ccb6f3}} 
+const unsigned short \mbox{\hyperlink{class_cell_a85b9b3af8b8b53da705b933628ccb6f3}{W\+I\+D\+TH}} = 64
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} width in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_ae04c2efdd0b489e36098edf766ed756a}\label{class_cell_ae04c2efdd0b489e36098edf766ed756a}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries target}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_cell}{Cell}} objects make up the 9x9 Sudoku grid. Each \mbox{\hyperlink{class_cell}{Cell}} is 64x64 pixels. 
+
+Usage example\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Ryan Poppe
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+Definition at line 37 of file cell.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_a9d0ebfcb208bfb39c30dfa7720dd9b34}\label{class_cell_a9d0ebfcb208bfb39c30dfa7720dd9b34}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{target,  }\item[{unsigned short}]{value,  }\item[{unsigned short}]{grid\+\_\+pos\+\_\+x,  }\item[{unsigned short}]{grid\+\_\+pos\+\_\+y,  }\item[{bool}]{given }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_cell}{Cell}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & unsigned short \\
+\hline
+{\em grid\+\_\+pos\+\_\+x} & unsigned short \\
+\hline
+{\em grid\+\_\+pos\+\_\+y} & unsigned short \\
+\hline
+{\em given} & bool \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Must set all four parameters in constructor 
+\end{DoxyNote}
+
+
+Definition at line 12 of file cell.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_a7806036101d729685ac78999189f7df7}\label{class_cell_a7806036101d729685ac78999189f7df7}} 
+\index{Cell@{Cell}!get\_grid\_pos\_x@{get\_grid\_pos\_x}}
+\index{get\_grid\_pos\_x@{get\_grid\_pos\_x}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{get\_grid\_pos\_x()}{get\_grid\_pos\_x()}}
+{\footnotesize\ttfamily unsigned short Cell\+::get\+\_\+grid\+\_\+pos\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns x-\/coordinate of the \mbox{\hyperlink{class_cell}{Cell}}. 
+
+\begin{DoxyReturn}{Returns}
+unsigned short x-\/coordinate of the \mbox{\hyperlink{class_cell}{Cell}} on the game board 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a8f589113dd676dc8f7ae31b082bf5ad9}\label{class_cell_a8f589113dd676dc8f7ae31b082bf5ad9}} 
+\index{Cell@{Cell}!get\_grid\_pos\_y@{get\_grid\_pos\_y}}
+\index{get\_grid\_pos\_y@{get\_grid\_pos\_y}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{get\_grid\_pos\_y()}{get\_grid\_pos\_y()}}
+{\footnotesize\ttfamily unsigned short Cell\+::get\+\_\+grid\+\_\+pos\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns y-\/coordinate of the \mbox{\hyperlink{class_cell}{Cell}}. 
+
+\begin{DoxyReturn}{Returns}
+unsigned short y-\/coordinate of the \mbox{\hyperlink{class_cell}{Cell}} on the game board 
+\end{DoxyReturn}
+
+
+Definition at line 131 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_aaba8773c40b75adbfed4f35e5eede1c5}\label{class_cell_aaba8773c40b75adbfed4f35e5eede1c5}} 
+\index{Cell@{Cell}!getValue@{getValue}}
+\index{getValue@{getValue}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily unsigned short Cell\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns value of the \mbox{\hyperlink{class_cell}{Cell}}. 
+
+\begin{DoxyReturn}{Returns}
+unsigned short value 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_ae2c5a718c64df9b3088c8166d6b3ba43}\label{class_cell_ae2c5a718c64df9b3088c8166d6b3ba43}} 
+\index{Cell@{Cell}!isActive@{isActive}}
+\index{isActive@{isActive}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is currently selected by the user. 
+
+\begin{DoxyReturn}{Returns}
+active 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a971dd484f9ae895f3990b8dcb43d2282}\label{class_cell_a971dd484f9ae895f3990b8dcb43d2282}} 
+\index{Cell@{Cell}!isEntered@{isEntered}}
+\index{isEntered@{isEntered}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isEntered()}{isEntered()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Entered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if a valid value has been entered in the \mbox{\hyperlink{class_cell}{Cell}}. 
+
+\begin{DoxyReturn}{Returns}
+entered 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a03259d45d95a864c8b935c420115ac93}\label{class_cell_a03259d45d95a864c8b935c420115ac93}} 
+\index{Cell@{Cell}!isGiven@{isGiven}}
+\index{isGiven@{isGiven}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isGiven()}{isGiven()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Given (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is an original given value. 
+
+\begin{DoxyReturn}{Returns}
+given 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a529edd65dc41e95583e76427ebe3ddcd}\label{class_cell_a529edd65dc41e95583e76427ebe3ddcd}} 
+\index{Cell@{Cell}!isHidden@{isHidden}}
+\index{isHidden@{isHidden}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isHidden()}{isHidden()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Hidden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is hidden. 
+
+\begin{DoxyReturn}{Returns}
+hidden 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_abda618a42a3cd6c8f47d9d8fc0cbc041}\label{class_cell_abda618a42a3cd6c8f47d9d8fc0cbc041}} 
+\index{Cell@{Cell}!isHighlighted@{isHighlighted}}
+\index{isHighlighted@{isHighlighted}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isHighlighted()}{isHighlighted()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Highlighted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if \mbox{\hyperlink{class_cell}{Cell}} is currently highlighted as part of the active group. 
+
+\begin{DoxyReturn}{Returns}
+active 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_ae104b91b4ba66747bcfa0c776b8cf727}\label{class_cell_ae104b91b4ba66747bcfa0c776b8cf727}} 
+\index{Cell@{Cell}!isHovered@{isHovered}}
+\index{isHovered@{isHovered}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isHovered()}{isHovered()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Hovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if mouse pointer is over this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+\begin{DoxyReturn}{Returns}
+hovered 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_afff7b6372dbc510e7e6d39e6db9ab7a0}\label{class_cell_afff7b6372dbc510e7e6d39e6db9ab7a0}} 
+\index{Cell@{Cell}!isInvalid@{isInvalid}}
+\index{isInvalid@{isInvalid}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isInvalid()}{isInvalid()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method returns True if \mbox{\hyperlink{class_cell}{Cell}} has an invalid value. 
+
+\begin{DoxyReturn}{Returns}
+invalid 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_afd7d80305283ce97b19ce85fb475f100}\label{class_cell_afd7d80305283ce97b19ce85fb475f100}} 
+\index{Cell@{Cell}!setActive@{setActive}}
+\index{setActive@{setActive}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily void Cell\+::set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method sets active status to this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & True to set this \mbox{\hyperlink{class_cell}{Cell}} as active \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Must set previously active \mbox{\hyperlink{class_cell}{Cell}} to false as well 
+\end{DoxyNote}
+
+
+Definition at line 71 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a744372cae4d980da9cc0222b8b0eed33}\label{class_cell_a744372cae4d980da9cc0222b8b0eed33}} 
+\index{Cell@{Cell}!setGiven@{setGiven}}
+\index{setGiven@{setGiven}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setGiven()}{setGiven()}}
+{\footnotesize\ttfamily void Cell\+::set\+Given (\begin{DoxyParamCaption}\item[{bool}]{given }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method sets given status to this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em given} & True to set this \mbox{\hyperlink{class_cell}{Cell}} as given \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a45f6d2ca583dd4a056d3ea7cb1aa887f}\label{class_cell_a45f6d2ca583dd4a056d3ea7cb1aa887f}} 
+\index{Cell@{Cell}!setHidden@{setHidden}}
+\index{setHidden@{setHidden}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setHidden()}{setHidden()}}
+{\footnotesize\ttfamily void Cell\+::set\+Hidden (\begin{DoxyParamCaption}\item[{bool}]{hidden }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method sets hidden status to this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hidden} & True to set this \mbox{\hyperlink{class_cell}{Cell}} as hidden \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_aa1be6baba63fa2539350646652c453ef}\label{class_cell_aa1be6baba63fa2539350646652c453ef}} 
+\index{Cell@{Cell}!setHighlighted@{setHighlighted}}
+\index{setHighlighted@{setHighlighted}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setHighlighted()}{setHighlighted()}}
+{\footnotesize\ttfamily void Cell\+::set\+Highlighted (\begin{DoxyParamCaption}\item[{bool}]{highlighted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method sets highlighted status to this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em highlighted} & True to set this \mbox{\hyperlink{class_cell}{Cell}} as highlighted \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 79 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_ac5bb88b06886fafae94c46ded555d4b7}\label{class_cell_ac5bb88b06886fafae94c46ded555d4b7}} 
+\index{Cell@{Cell}!setHovered@{setHovered}}
+\index{setHovered@{setHovered}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setHovered()}{setHovered()}}
+{\footnotesize\ttfamily void Cell\+::set\+Hovered (\begin{DoxyParamCaption}\item[{bool}]{hovered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method sets hovered status to this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hovered} & True to set this \mbox{\hyperlink{class_cell}{Cell}} as hovered \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_addd25fbd659b2b8d74a6cfcf2813d277}\label{class_cell_addd25fbd659b2b8d74a6cfcf2813d277}} 
+\index{Cell@{Cell}!setInvalid@{setInvalid}}
+\index{setInvalid@{setInvalid}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setInvalid()}{setInvalid()}}
+{\footnotesize\ttfamily void Cell\+::set\+Invalid (\begin{DoxyParamCaption}\item[{bool}]{invalid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method sets invalid status to this \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em invalid} & True to set this \mbox{\hyperlink{class_cell}{Cell}} as invalid \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file cell.\+h.
+
+\mbox{\Hypertarget{class_cell_a3160a45fb961ba1f319424988fd5a4ee}\label{class_cell_a3160a45fb961ba1f319424988fd5a4ee}} 
+\index{Cell@{Cell}!setValue@{setValue}}
+\index{setValue@{setValue}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void Cell\+::set\+Value (\begin{DoxyParamCaption}\item[{unsigned short}]{value }\end{DoxyParamCaption})}
+
+
+
+This method sets the value of the \mbox{\hyperlink{class_cell}{Cell}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & unsigned short (1 $<$= value $<$=9) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file cell.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/cell.\+h\item 
+src/cell.\+cpp\end{DoxyCompactItemize}

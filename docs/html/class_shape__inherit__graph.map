@@ -1,0 +1,4 @@
+<map id="Shape" name="Shape">
+<area shape="rect" id="node1" title="Creates shape objects to render to web canvas." alt="" coords="5,131,92,369"/>
+<area shape="rect" id="node2" href="$class_render.html" title="Renders objects to web canvas." alt="" coords="11,5,87,83"/>
+</map>

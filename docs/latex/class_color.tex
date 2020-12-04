@@ -1,0 +1,229 @@
+\hypertarget{class_color}{}\doxysection{Color Class Reference}
+\label{class_color}\index{Color@{Color}}
+
+
+Creates R\+G\+BA color object.  
+
+
+
+
+{\ttfamily \#include $<$Color.\+h$>$}
+
+
+
+Collaboration diagram for Color\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_color__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_color_a733913bb12099184a3d8db5fc2160996}\label{class_color_a733913bb12099184a3d8db5fc2160996}} 
+constexpr \mbox{\hyperlink{class_color_a733913bb12099184a3d8db5fc2160996}{Color}} (uint8\+\_\+t \mbox{\hyperlink{class_color_aecbc1a4121c21990512e7c10544d6ece}{r}}, uint8\+\_\+t \mbox{\hyperlink{class_color_a23331f00b02491a901873b5085461d99}{g}}, uint8\+\_\+t \mbox{\hyperlink{class_color_a78ede410fb277ade36fbb157f0235d6f}{b}}, uint8\+\_\+t \mbox{\hyperlink{class_color_a12022d435709c08f47937a7361fe8441}{a}}=255)
+\begin{DoxyCompactList}\small\item\em Constructor with default alpha value as 255. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_a9a70e3104f4020222f96f84a9ae6c8e4}{transparent}} ()
+\begin{DoxyCompactList}\small\item\em Transparent background for cell. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_a1d935e5cd16a0a0c8858386deb7958c1}{active}} ()
+\begin{DoxyCompactList}\small\item\em Background color of active cell. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_a72e05128b78bae9082e06c01305a9c31}{highlighted}} ()
+\begin{DoxyCompactList}\small\item\em Background color of highlighted cell. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_ac5a1ebeb29c2a762ca8f1fd58de96ac8}{hovered}} ()
+\begin{DoxyCompactList}\small\item\em Background color of the cell the mouse pointer is currently touching. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_a47af2cc2713c260928cb38b7d7516bc7}{entered\+Text}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_text}{Text}} color of a cell that has a correct value entered by the player. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_aae2a2a5abdfa7ce70d7982a856e375e5}{given\+Text}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_text}{Text}} color of a cell that has a value that was given at the start. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_a3affb9ad98d8252e19f2ed6099e0fea3}{similar}} ()
+\begin{DoxyCompactList}\small\item\em Background color of all cells with the same number as the active cell. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_ad1dbc05cb6f1f402f028397340fad011}{invalid}} ()
+\begin{DoxyCompactList}\small\item\em Background color of a cell containing a possible error. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_color}{Color}} \mbox{\hyperlink{class_color_a8958d7551adc8c80682958337c56d4e3}{invalid\+Text}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_text}{Text}} color of a cell containing an incorrect number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_color_aecbc1a4121c21990512e7c10544d6ece}\label{class_color_aecbc1a4121c21990512e7c10544d6ece}} 
+uint8\+\_\+t \mbox{\hyperlink{class_color_aecbc1a4121c21990512e7c10544d6ece}{r}}
+\begin{DoxyCompactList}\small\item\em Red R\+G\+BA value (0 $<$= r $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_color_a23331f00b02491a901873b5085461d99}\label{class_color_a23331f00b02491a901873b5085461d99}} 
+uint8\+\_\+t \mbox{\hyperlink{class_color_a23331f00b02491a901873b5085461d99}{g}}
+\begin{DoxyCompactList}\small\item\em Blue R\+G\+BA value (0 $<$= g $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_color_a78ede410fb277ade36fbb157f0235d6f}\label{class_color_a78ede410fb277ade36fbb157f0235d6f}} 
+uint8\+\_\+t \mbox{\hyperlink{class_color_a78ede410fb277ade36fbb157f0235d6f}{b}}
+\begin{DoxyCompactList}\small\item\em Red R\+G\+BA value (0 $<$= b $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_color_a12022d435709c08f47937a7361fe8441}\label{class_color_a12022d435709c08f47937a7361fe8441}} 
+uint8\+\_\+t \mbox{\hyperlink{class_color_a12022d435709c08f47937a7361fe8441}{a}}
+\begin{DoxyCompactList}\small\item\em Alpha R\+G\+BA value (0 $<$= a $<$= 255). $\ast$\+This determines transparency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates R\+G\+BA color object. 
+
+Usage example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} useColorClass(\textcolor{keyword}{const} \mbox{\hyperlink{class_color}{Color}}\& color)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{// Do something with the color}}
+\DoxyCodeLine{     uint8\_t red = color-\/>\mbox{\hyperlink{class_color_aecbc1a4121c21990512e7c10544d6ece}{r}};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{useColorClass(\mbox{\hyperlink{class_color_a9a70e3104f4020222f96f84a9ae6c8e4}{Color::transparent}}());}
+\DoxyCodeLine{useColorClass(\mbox{\hyperlink{class_color_a733913bb12099184a3d8db5fc2160996}{Color::Color}}(255, 128, 0, 0));}
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Ryan Poppe. Credit for constructor to stackoverfow
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Last update made by Ryan Poppe. 
+\end{DoxyNote}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+Definition at line 31 of file Color.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_color_a1d935e5cd16a0a0c8858386deb7958c1}\label{class_color_a1d935e5cd16a0a0c8858386deb7958c1}} 
+\index{Color@{Color}!active@{active}}
+\index{active@{active}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{active()}{active()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Background color of active cell. 
+
+Light blue 
+
+Definition at line 43 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_a47af2cc2713c260928cb38b7d7516bc7}\label{class_color_a47af2cc2713c260928cb38b7d7516bc7}} 
+\index{Color@{Color}!enteredText@{enteredText}}
+\index{enteredText@{enteredText}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{enteredText()}{enteredText()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::entered\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+\mbox{\hyperlink{class_text}{Text}} color of a cell that has a correct value entered by the player. 
+
+Blue 
+
+Definition at line 58 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_aae2a2a5abdfa7ce70d7982a856e375e5}\label{class_color_aae2a2a5abdfa7ce70d7982a856e375e5}} 
+\index{Color@{Color}!givenText@{givenText}}
+\index{givenText@{givenText}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{givenText()}{givenText()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::given\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+\mbox{\hyperlink{class_text}{Text}} color of a cell that has a value that was given at the start. 
+
+Black 
+
+Definition at line 63 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_a72e05128b78bae9082e06c01305a9c31}\label{class_color_a72e05128b78bae9082e06c01305a9c31}} 
+\index{Color@{Color}!highlighted@{highlighted}}
+\index{highlighted@{highlighted}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{highlighted()}{highlighted()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::highlighted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Background color of highlighted cell. 
+
+Grey 
+
+Definition at line 48 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_ac5a1ebeb29c2a762ca8f1fd58de96ac8}\label{class_color_ac5a1ebeb29c2a762ca8f1fd58de96ac8}} 
+\index{Color@{Color}!hovered@{hovered}}
+\index{hovered@{hovered}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{hovered()}{hovered()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::hovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Background color of the cell the mouse pointer is currently touching. 
+
+Lighter blue 
+
+Definition at line 53 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_ad1dbc05cb6f1f402f028397340fad011}\label{class_color_ad1dbc05cb6f1f402f028397340fad011}} 
+\index{Color@{Color}!invalid@{invalid}}
+\index{invalid@{invalid}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{invalid()}{invalid()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Background color of a cell containing a possible error. 
+
+Pink 
+
+Definition at line 73 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_a8958d7551adc8c80682958337c56d4e3}\label{class_color_a8958d7551adc8c80682958337c56d4e3}} 
+\index{Color@{Color}!invalidText@{invalidText}}
+\index{invalidText@{invalidText}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{invalidText()}{invalidText()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::invalid\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+\mbox{\hyperlink{class_text}{Text}} color of a cell containing an incorrect number. 
+
+Red 
+
+Definition at line 78 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_a3affb9ad98d8252e19f2ed6099e0fea3}\label{class_color_a3affb9ad98d8252e19f2ed6099e0fea3}} 
+\index{Color@{Color}!similar@{similar}}
+\index{similar@{similar}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{similar()}{similar()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::similar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Background color of all cells with the same number as the active cell. 
+
+Blueish 
+
+Definition at line 68 of file Color.\+h.
+
+\mbox{\Hypertarget{class_color_a9a70e3104f4020222f96f84a9ae6c8e4}\label{class_color_a9a70e3104f4020222f96f84a9ae6c8e4}} 
+\index{Color@{Color}!transparent@{transparent}}
+\index{transparent@{transparent}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{transparent()}{transparent()}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{class_color}{Color}} Color\+::transparent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Transparent background for cell. 
+
+Alpha value is 0 so it will appear to be blank 
+
+Definition at line 38 of file Color.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Color.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_render.html" title="Renders objects to web canvas." alt="" coords="5,56,68,83"/>
+<area shape="rect" id="node2" href="$class_image.html" title="Creates image objects to render to web canvas." alt="" coords="117,5,174,32"/>
+<area shape="rect" id="node3" href="$class_shape.html" title="Creates shape objects to render to web canvas." alt="" coords="116,56,175,83"/>
+<area shape="rect" id="node4" href="$class_text.html" title="Creates text objects to render to web canvas." alt="" coords="122,107,169,133"/>
+</map>

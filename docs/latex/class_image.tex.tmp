@@ -1,0 +1,115 @@
+\hypertarget{class_image}{}\doxysection{Image Class Reference}
+\label{class_image}\index{Image@{Image}}
+
+
+Creates image objects to render to web canvas.  
+
+
+
+
+{\ttfamily \#include $<$image.\+h$>$}
+
+
+
+Inheritance diagram for Image\+:
+% FIG 0
+
+
+Collaboration diagram for Image\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image_adf558e065a88d0eaf66370d47f632f32}{Image}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_image}{Image}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_image_a0294f63700543e11c0f0da85601c7ae5}\label{class_image_a0294f63700543e11c0f0da85601c7ae5}} 
+\mbox{\hyperlink{class_image_a0294f63700543e11c0f0da85601c7ae5}{$\sim$\+Image}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_image}{Image}} De\+Constructor flushes the loaded image file from memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_add70bf7c77692839fe6af1605d63b76b}{Stage}} (S\+D\+L\+\_\+\+Surface $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Add image to the rendering stage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates image objects to render to web canvas. 
+
+Usage example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SDL\_Surface* target;}
+\DoxyCodeLine{\mbox{\hyperlink{class_image}{Image}}* bg;}
+\DoxyCodeLine{\textcolor{comment}{// Load PNG assets}}
+\DoxyCodeLine{bg = \textcolor{keyword}{new} \mbox{\hyperlink{class_image_adf558e065a88d0eaf66370d47f632f32}{Image}}(\textcolor{stringliteral}{"{}assets/bg.png"{}});}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!bg) \{}
+\DoxyCodeLine{    std::cerr << \textcolor{stringliteral}{"{}Failed to load background image."{}} << std::endl;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{comment}{// Draw background image}}
+\DoxyCodeLine{bg-\/>\mbox{\hyperlink{class_image_add70bf7c77692839fe6af1605d63b76b}{Stage}}(target, 0, 0);}
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Ryan Poppe
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Last update made by Ryan Poppe
+\end{DoxyNote}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_image_adf558e065a88d0eaf66370d47f632f32}\label{class_image_adf558e065a88d0eaf66370d47f632f32}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_image}{Image}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the image, including the filename and extension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+e.\+g. assets/images/img.\+png 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_add70bf7c77692839fe6af1605d63b76b}\label{class_image_add70bf7c77692839fe6af1605d63b76b}} 
+\index{Image@{Image}!Stage@{Stage}}
+\index{Stage@{Stage}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Stage()}{Stage()}}
+{\footnotesize\ttfamily void Image\+::\+Stage (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{stage,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add image to the rendering stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage} & Pointer to the Stage S\+DL Surface \\
+\hline
+{\em x} & x-\/coordinate of where on the canvas to place the image \\
+\hline
+{\em y} & y-\/coordinate of where on the canvas to place the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Can be used to blit a transparent P\+NG 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_render}{Render}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/image.\+h\item 
+src/Image.\+cpp\end{DoxyCompactItemize}

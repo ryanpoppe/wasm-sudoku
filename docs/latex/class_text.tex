@@ -1,0 +1,268 @@
+\hypertarget{class_text}{}\doxysection{Text Class Reference}
+\label{class_text}\index{Text@{Text}}
+
+
+Creates text objects to render to web canvas.  
+
+
+
+
+{\ttfamily \#include $<$text.\+h$>$}
+
+
+
+Inheritance diagram for Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_text__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_text__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_text_ae15889b2d4f9b564cb4e5b4c5c17ffc4}{Fill}} (const \mbox{\hyperlink{class_color}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Chnages the text color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_ab68a1f197704f16cc2609de0c6bb94de}{Stage}} (S\+D\+L\+\_\+\+Surface $\ast$stage, int x, int y)
+\begin{DoxyCompactList}\small\item\em Renders object to the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_ae5a14d3e88a437d61cc266011f879824}{Stroke}} (unsigned short size, const \mbox{\hyperlink{class_color}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Set the text stroke (outline) color and thickness. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_a7157c50ca7c394cfc9a162451ebddced}{Text}} (const std\+::string \&message, const std\+::string \&font\+Path, unsigned short \mbox{\hyperlink{class_text_ab883b4f04e775d8420e1df87fd86f7e3}{font\+Size}}, const \mbox{\hyperlink{class_color}{Color}} \&\mbox{\hyperlink{class_text_a2ab48ca6cb1d55d9df9438ca60326328}{fill}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_text}{Text}} object Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_text_a1e3ccb320db059dfa440c8f2c799d5b6}{Draw\+Bitmap}} (F\+T\+\_\+\+Bitmap, int, int, S\+D\+L\+\_\+\+Surface $\ast$)
+\begin{DoxyCompactList}\small\item\em Draw a single Free\+Type bitmap glyph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_text_acf208925a9a16c423b68ab78885f14f4}\label{class_text_acf208925a9a16c423b68ab78885f14f4}} 
+char $\ast$ \mbox{\hyperlink{class_text_acf208925a9a16c423b68ab78885f14f4}{text}}
+\begin{DoxyCompactList}\small\item\em Character array that holds the text to be displayed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a25fb688f4425a29b1648f20db24daf46}\label{class_text_a25fb688f4425a29b1648f20db24daf46}} 
+int \mbox{\hyperlink{class_text_a25fb688f4425a29b1648f20db24daf46}{text\+Length}}
+\begin{DoxyCompactList}\small\item\em Length of the text in the char array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a1012951720ab9c2dd0ae761c68b045de}\label{class_text_a1012951720ab9c2dd0ae761c68b045de}} 
+unsigned short \mbox{\hyperlink{class_text_a1012951720ab9c2dd0ae761c68b045de}{stroke\+Width}}
+\begin{DoxyCompactList}\small\item\em Size of the the text stroke effect (outline of the text) in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_ab883b4f04e775d8420e1df87fd86f7e3}\label{class_text_ab883b4f04e775d8420e1df87fd86f7e3}} 
+unsigned short \mbox{\hyperlink{class_text_ab883b4f04e775d8420e1df87fd86f7e3}{font\+Size}}
+\begin{DoxyCompactList}\small\item\em Font size of the text to be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a39191d358b78419a39c7bd661c71f1de}\label{class_text_a39191d358b78419a39c7bd661c71f1de}} 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_text_a39191d358b78419a39c7bd661c71f1de}{dest}}
+\begin{DoxyCompactList}\small\item\em Controls location of the object on the canvas, with it\textquotesingle{}s origin at the upper left. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a5c1bcd6a68f3d208f864e3d1122cd124}\label{class_text_a5c1bcd6a68f3d208f864e3d1122cd124}} 
+F\+T\+\_\+\+Library \mbox{\hyperlink{class_text_a5c1bcd6a68f3d208f864e3d1122cd124}{ft\+Lib}}
+\begin{DoxyCompactList}\small\item\em Used to initialize Free\+Type library. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_aea898155aaf315dcbfe2357ef6c8ed39}\label{class_text_aea898155aaf315dcbfe2357ef6c8ed39}} 
+F\+T\+\_\+\+Face \mbox{\hyperlink{class_text_aea898155aaf315dcbfe2357ef6c8ed39}{ft\+Face}}
+\begin{DoxyCompactList}\small\item\em Stores the font face for Free\+Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a2ab48ca6cb1d55d9df9438ca60326328}\label{class_text_a2ab48ca6cb1d55d9df9438ca60326328}} 
+const \mbox{\hyperlink{class_color}{Color}} $\ast$ \mbox{\hyperlink{class_text_a2ab48ca6cb1d55d9df9438ca60326328}{fill}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_color}{Color}} of the text to be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a9f79c05931eef87b33992dbd3586ebfd}\label{class_text_a9f79c05931eef87b33992dbd3586ebfd}} 
+\mbox{\hyperlink{class_color}{Color}} $\ast$ \mbox{\hyperlink{class_text_a9f79c05931eef87b33992dbd3586ebfd}{stroke}}
+\begin{DoxyCompactList}\small\item\em Outline color of the text to be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_ac7cb35e16bdce0dda4b95b366c877a48}\label{class_text_ac7cb35e16bdce0dda4b95b366c877a48}} 
+bool \mbox{\hyperlink{class_text_ac7cb35e16bdce0dda4b95b366c877a48}{stroked}}
+\begin{DoxyCompactList}\small\item\em True if text has outline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a75040f11faf4d47105e2840d42524677}\label{class_text_a75040f11faf4d47105e2840d42524677}} 
+uint8\+\_\+t \mbox{\hyperlink{class_text_a75040f11faf4d47105e2840d42524677}{r}}
+\begin{DoxyCompactList}\small\item\em Red R\+G\+BA value (0 $<$= r $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a6c49513895e49270844ab780a96d09ab}\label{class_text_a6c49513895e49270844ab780a96d09ab}} 
+uint8\+\_\+t \mbox{\hyperlink{class_text_a6c49513895e49270844ab780a96d09ab}{g}}
+\begin{DoxyCompactList}\small\item\em Blue R\+G\+BA value (0 $<$= g $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_a0ffd537d07f8114e6584da4c22bc1145}\label{class_text_a0ffd537d07f8114e6584da4c22bc1145}} 
+uint8\+\_\+t \mbox{\hyperlink{class_text_a0ffd537d07f8114e6584da4c22bc1145}{b}}
+\begin{DoxyCompactList}\small\item\em Red R\+G\+BA value (0 $<$= b $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_aefbe98e07e0fdf37679228aa28a863ee}\label{class_text_aefbe98e07e0fdf37679228aa28a863ee}} 
+uint8\+\_\+t \mbox{\hyperlink{class_text_aefbe98e07e0fdf37679228aa28a863ee}{a}}
+\begin{DoxyCompactList}\small\item\em Alpha R\+G\+BA value (0 $<$= a $<$= 255). $\ast$\+This determines transparency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates text objects to render to web canvas. 
+
+Usage example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{FT\_Library \mbox{\hyperlink{class_text_a5c1bcd6a68f3d208f864e3d1122cd124}{ftLib}};}
+\DoxyCodeLine{FT\_Face arial;}
+\DoxyCodeLine{FT\_Init\_FreeType(\&\mbox{\hyperlink{class_text_a5c1bcd6a68f3d208f864e3d1122cd124}{ftLib}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{FT\_New\_Face(\mbox{\hyperlink{class_text_a5c1bcd6a68f3d208f864e3d1122cd124}{ftLib}}, \textcolor{stringliteral}{"{}assets/arial.ttf"{}}, 0, \&arial);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_text}{Text}}* message = \textcolor{keyword}{new} \mbox{\hyperlink{class_text_a7157c50ca7c394cfc9a162451ebddced}{Text}}(\textcolor{stringliteral}{"{}Rich text example."{}}, arial, 12);}
+\DoxyCodeLine{message-\/>\mbox{\hyperlink{class_text_ae15889b2d4f9b564cb4e5b4c5c17ffc4}{Fill}}(\mbox{\hyperlink{class_color}{Color}}(102, 204, 255));}
+\DoxyCodeLine{message-\/>\mbox{\hyperlink{class_text_ae5a14d3e88a437d61cc266011f879824}{Stroke}}(1, \mbox{\hyperlink{class_color_ad1dbc05cb6f1f402f028397340fad011}{Color::invalid}}());}
+\DoxyCodeLine{message-\/>\mbox{\hyperlink{class_text_ab68a1f197704f16cc2609de0c6bb94de}{Stage}}(target, 0, 0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{delete} message;}
+\DoxyCodeLine{message = \textcolor{keyword}{nullptr};}
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Ryan Poppe
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Last update made by Ryan Poppe
+\end{DoxyNote}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+Definition at line 50 of file text.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_a7157c50ca7c394cfc9a162451ebddced}\label{class_text_a7157c50ca7c394cfc9a162451ebddced}} 
+\index{Text@{Text}!Text@{Text}}
+\index{Text@{Text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}}
+{\footnotesize\ttfamily Text\+::\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{font\+Path,  }\item[{unsigned short}]{font\+Size,  }\item[{const \mbox{\hyperlink{class_color}{Color}} \&}]{fill }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_text}{Text}} object Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \mbox{\hyperlink{class_text}{Text}} string to be rasterized \\
+\hline
+{\em font\+Path} & Path of the T\+TF font file \\
+\hline
+{\em font\+Size} & Point size of the text to be rasterized \\
+\hline
+{\em fill} & R\+G\+BA color object for the text color \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file Text.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text_a1e3ccb320db059dfa440c8f2c799d5b6}\label{class_text_a1e3ccb320db059dfa440c8f2c799d5b6}} 
+\index{Text@{Text}!DrawBitmap@{DrawBitmap}}
+\index{DrawBitmap@{DrawBitmap}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{DrawBitmap()}{DrawBitmap()}}
+{\footnotesize\ttfamily void Text\+::\+Draw\+Bitmap (\begin{DoxyParamCaption}\item[{F\+T\+\_\+\+Bitmap}]{bm,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{stage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draw a single Free\+Type bitmap glyph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bm} & Accepts Free\+Type bitmap glyph \\
+\hline
+{\em x} & x-\/coordinate of where on the canvas to place the image \\
+\hline
+{\em y} & y-\/coordinate of where on the canvas to place the image \\
+\hline
+{\em stage} & pointer to the staging S\+D\+L\+\_\+\+Surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Used by the stage function 
+\end{DoxyNote}
+
+
+Definition at line 110 of file Text.\+cpp.
+
+\mbox{\Hypertarget{class_text_ae15889b2d4f9b564cb4e5b4c5c17ffc4}\label{class_text_ae15889b2d4f9b564cb4e5b4c5c17ffc4}} 
+\index{Text@{Text}!Fill@{Fill}}
+\index{Fill@{Fill}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily void Text\+::\+Fill (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_color}{Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Chnages the text color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & R\+G\+BA color object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Can be used to update the text color outside of the constructor 
+\end{DoxyNote}
+
+
+Definition at line 97 of file Text.\+cpp.
+
+\mbox{\Hypertarget{class_text_ab68a1f197704f16cc2609de0c6bb94de}\label{class_text_ab68a1f197704f16cc2609de0c6bb94de}} 
+\index{Text@{Text}!Stage@{Stage}}
+\index{Stage@{Stage}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Stage()}{Stage()}}
+{\footnotesize\ttfamily void Text\+::\+Stage (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{stage,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders object to the stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage} & pointer to the staging S\+D\+L\+\_\+\+Surface \\
+\hline
+{\em x} & x-\/coordinate of where on the canvas to place the image \\
+\hline
+{\em y} & y-\/coordinate of where on the canvas to place the image \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_render}{Render}}.
+
+
+
+Definition at line 84 of file Text.\+cpp.
+
+\mbox{\Hypertarget{class_text_ae5a14d3e88a437d61cc266011f879824}\label{class_text_ae5a14d3e88a437d61cc266011f879824}} 
+\index{Text@{Text}!Stroke@{Stroke}}
+\index{Stroke@{Stroke}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Stroke()}{Stroke()}}
+{\footnotesize\ttfamily void Text\+::\+Stroke (\begin{DoxyParamCaption}\item[{unsigned short}]{size,  }\item[{const \mbox{\hyperlink{class_color}{Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Set the text stroke (outline) color and thickness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Thickness of the text stroke \\
+\hline
+{\em color} & R\+G\+BA color object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Function N\+OT implemented 
+\end{DoxyNote}
+
+
+Definition at line 104 of file Text.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/text.\+h\item 
+src/Text.\+cpp\end{DoxyCompactItemize}

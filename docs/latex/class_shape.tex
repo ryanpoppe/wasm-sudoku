@@ -1,0 +1,185 @@
+\hypertarget{class_shape}{}\doxysection{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+Creates shape objects to render to web canvas.  
+
+
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+
+
+Inheritance diagram for Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_shape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_shape__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape_a4e982864faa6c14358fb687a4d467b59}{Shape}} (unsigned short \mbox{\hyperlink{class_shape_a6b7201c311029cbf954a0377228658e2}{height}}, unsigned short \mbox{\hyperlink{class_shape_a8704cae72f04908493d7e6458d732815}{width}}, const \mbox{\hyperlink{class_color}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_shape}{Shape}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shape_a935afc9e576015f967d90de56977167d}{$\sim$\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_shape}{Shape}} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shape_a30e1afcd76d9d4456cb7ca03f4b3abbd}{Stage}} (S\+D\+L\+\_\+\+Surface $\ast$stage, int \mbox{\hyperlink{class_shape_abc67a9fb0b54e4836aefed417f03427b}{x}}, int \mbox{\hyperlink{class_shape_a0f1fc5dde9ea1cbe4d56ee9349a0d5fe}{y}})
+\begin{DoxyCompactList}\small\item\em Add image to the rendering stage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shape_a6b7201c311029cbf954a0377228658e2}\label{class_shape_a6b7201c311029cbf954a0377228658e2}} 
+unsigned short \mbox{\hyperlink{class_shape_a6b7201c311029cbf954a0377228658e2}{height}}
+\begin{DoxyCompactList}\small\item\em Height of the rectangle object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a8704cae72f04908493d7e6458d732815}\label{class_shape_a8704cae72f04908493d7e6458d732815}} 
+unsigned short \mbox{\hyperlink{class_shape_a8704cae72f04908493d7e6458d732815}{width}}
+\begin{DoxyCompactList}\small\item\em Width of the rectangle object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_abc67a9fb0b54e4836aefed417f03427b}\label{class_shape_abc67a9fb0b54e4836aefed417f03427b}} 
+unsigned short \mbox{\hyperlink{class_shape_abc67a9fb0b54e4836aefed417f03427b}{x}}
+\begin{DoxyCompactList}\small\item\em x-\/coordinate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a0f1fc5dde9ea1cbe4d56ee9349a0d5fe}\label{class_shape_a0f1fc5dde9ea1cbe4d56ee9349a0d5fe}} 
+unsigned short \mbox{\hyperlink{class_shape_a0f1fc5dde9ea1cbe4d56ee9349a0d5fe}{y}}
+\begin{DoxyCompactList}\small\item\em y-\/coordinate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_aa2134d4bba921bc4655a71f05b487e96}\label{class_shape_aa2134d4bba921bc4655a71f05b487e96}} 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_shape_aa2134d4bba921bc4655a71f05b487e96}{dest}}
+\begin{DoxyCompactList}\small\item\em Controls location of the object on the canvas, with it\textquotesingle{}s origin at the upper left. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a07336f10c0e91dd9ff24e45c4ebf0d23}\label{class_shape_a07336f10c0e91dd9ff24e45c4ebf0d23}} 
+\mbox{\hyperlink{class_color}{Color}} $\ast$ \mbox{\hyperlink{class_shape_a07336f10c0e91dd9ff24e45c4ebf0d23}{fill}}
+\begin{DoxyCompactList}\small\item\em The fill color of the \mbox{\hyperlink{class_shape}{Shape}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a837f138b5bf7ab3aec4594e18ffc2fa9}\label{class_shape_a837f138b5bf7ab3aec4594e18ffc2fa9}} 
+uint8\+\_\+t \mbox{\hyperlink{class_shape_a837f138b5bf7ab3aec4594e18ffc2fa9}{r}}
+\begin{DoxyCompactList}\small\item\em Red R\+G\+BA value (0 $<$= r $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_acb0bef3df35196800e71e696876d2d27}\label{class_shape_acb0bef3df35196800e71e696876d2d27}} 
+uint8\+\_\+t \mbox{\hyperlink{class_shape_acb0bef3df35196800e71e696876d2d27}{g}}
+\begin{DoxyCompactList}\small\item\em Blue R\+G\+BA value (0 $<$= g $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a4ff7fc3032dfc86f4da429dd604ed770}\label{class_shape_a4ff7fc3032dfc86f4da429dd604ed770}} 
+uint8\+\_\+t \mbox{\hyperlink{class_shape_a4ff7fc3032dfc86f4da429dd604ed770}{b}}
+\begin{DoxyCompactList}\small\item\em Red R\+G\+BA value (0 $<$= b $<$= 255) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a259fe4a65570914584a16490c9dd5bd6}\label{class_shape_a259fe4a65570914584a16490c9dd5bd6}} 
+uint8\+\_\+t \mbox{\hyperlink{class_shape_a259fe4a65570914584a16490c9dd5bd6}{a}}
+\begin{DoxyCompactList}\small\item\em Alpha R\+G\+BA value (0 $<$= a $<$= 255). $\ast$\+This determines transparency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates shape objects to render to web canvas. 
+
+Usage example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SDL\_Surface* target;}
+\DoxyCodeLine{\mbox{\hyperlink{class_shape}{Shape}}* square = \textcolor{keyword}{new} \mbox{\hyperlink{class_shape_a4e982864faa6c14358fb687a4d467b59}{Shape}}(64, 64, \mbox{\hyperlink{class_color_a1d935e5cd16a0a0c8858386deb7958c1}{Color::active}}());}
+\DoxyCodeLine{square-\/>\mbox{\hyperlink{class_shape_a30e1afcd76d9d4456cb7ca03f4b3abbd}{Stage}}(target, 170, 170);}
+\DoxyCodeLine{\textcolor{keyword}{delete} square;}
+\DoxyCodeLine{square = \textcolor{keyword}{nullptr};}
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Ryan Poppe
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Last update made by Ryan Poppe
+\end{DoxyNote}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+Definition at line 35 of file shape.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shape_a4e982864faa6c14358fb687a4d467b59}\label{class_shape_a4e982864faa6c14358fb687a4d467b59}} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{unsigned short}]{height,  }\item[{unsigned short}]{width,  }\item[{const \mbox{\hyperlink{class_color}{Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_shape}{Shape}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & Height of shape in pixels \\
+\hline
+{\em width} & Width of shape in pixels \\
+\hline
+{\em color} & R\+G\+BA \mbox{\hyperlink{class_color}{Color}} object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file Shape.\+cpp.
+
+\mbox{\Hypertarget{class_shape_a935afc9e576015f967d90de56977167d}\label{class_shape_a935afc9e576015f967d90de56977167d}} 
+\index{Shape@{Shape}!````~Shape@{$\sim$Shape}}
+\index{````~Shape@{$\sim$Shape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{$\sim$Shape()}{~Shape()}}
+{\footnotesize\ttfamily Shape\+::$\sim$\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_shape}{Shape}} destructor. 
+
+\begin{DoxyNote}{Note}
+Deletes color object associated with this shape 
+\end{DoxyNote}
+
+
+Definition at line 29 of file Shape.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shape_a30e1afcd76d9d4456cb7ca03f4b3abbd}\label{class_shape_a30e1afcd76d9d4456cb7ca03f4b3abbd}} 
+\index{Shape@{Shape}!Stage@{Stage}}
+\index{Stage@{Stage}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Stage()}{Stage()}}
+{\footnotesize\ttfamily void Shape\+::\+Stage (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{stage,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add image to the rendering stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage} & Pointer to the Stage S\+DL Surface \\
+\hline
+{\em x} & x-\/coordinate of where on the canvas to place the image \\
+\hline
+{\em y} & y-\/coordinate of where on the canvas to place the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Can be used to blit a transparent P\+NG 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_render}{Render}}.
+
+
+
+Definition at line 8 of file Shape.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shape.\+h\item 
+src/Shape.\+cpp\end{DoxyCompactItemize}

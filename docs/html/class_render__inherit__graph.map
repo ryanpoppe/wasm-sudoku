@@ -1,0 +1,6 @@
+<map id="Render" name="Render">
+<area shape="rect" id="node1" title="Renders objects to web canvas." alt="" coords="121,5,197,83"/>
+<area shape="rect" id="node2" href="$class_image.html" title="Creates image objects to render to web canvas." alt="" coords="5,233,91,369"/>
+<area shape="rect" id="node3" href="$class_shape.html" title="Creates shape objects to render to web canvas." alt="" coords="115,182,202,421"/>
+<area shape="rect" id="node4" href="$class_text.html" title="Creates text objects to render to web canvas." alt="" coords="226,131,334,472"/>
+</map>

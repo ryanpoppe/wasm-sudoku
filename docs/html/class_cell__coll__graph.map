@@ -1,0 +1,7 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node1" title="Cell objects make up the 9x9 Sudoku grid. Each Cell is 64x64 pixels." alt="" coords="108,711,232,1140"/>
+<area shape="rect" id="node2" href="$class_text.html" title="Creates text objects to render to web canvas." alt="" coords="116,336,224,648"/>
+<area shape="rect" id="node3" href="$class_render.html" title="Renders objects to web canvas." alt="" coords="17,93,93,171"/>
+<area shape="rect" id="node5" href="$class_shape.html" title="Creates shape objects to render to web canvas." alt="" coords="5,380,92,604"/>
+<area shape="rect" id="node4" href="$class_color.html" title="Creates RGBA color object." alt="" coords="123,5,233,259"/>
+</map>

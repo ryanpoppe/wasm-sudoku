@@ -1,0 +1,5 @@
+<map id="Text" name="Text">
+<area shape="rect" id="node1" title="Creates text objects to render to web canvas." alt="" coords="48,336,156,648"/>
+<area shape="rect" id="node2" href="$class_render.html" title="Renders objects to web canvas." alt="" coords="5,93,81,171"/>
+<area shape="rect" id="node3" href="$class_color.html" title="Creates RGBA color object." alt="" coords="105,5,216,259"/>
+</map>
